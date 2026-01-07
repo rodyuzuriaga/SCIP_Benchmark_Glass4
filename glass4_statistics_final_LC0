@@ -1,0 +1,11 @@
+######### The number of nodes solved in all solvers: 2809558 : 2809568 #########
+######### LoadCoordinator Rank = 0 is terminated. #########
+#=== The number of ParaNodes received = 357
+#=== The number of ParaNodes sent = 91
+#=== ( # sent back immediately = 0, # failed to send back = 5 )
+#=== ( # sent back immediately ( another node ) = 5, # failed to send back ( another node ) = 0 )
+#=== The number of ParaNodes deleted in LoadCoordinator = 208 ( by merging: 0 )
+#=== Maximum usage of node pool = 357, initial p = 1, maximum multiplier = 1
+#=== Idle time to terminate this LoadCoordinator  = 1559.95
+#=== Elapsed time to terminate this LoadCoordinator  = 1561.36
+#=== Time used for merging nodes: add = 0, gen. = 0, regen. = 0, merge = 0

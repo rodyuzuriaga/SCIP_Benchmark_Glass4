@@ -1,0 +1,5 @@
+# Nivel de verbosidad (4 para ver todo el movimiento paralelo)
+OutputParaParams = 2
+
+# No silenciar la salida
+Quiet = FALSE

@@ -1,0 +1,6 @@
+# Set log output to minimal information [Default value: TRUE]
+Quiet = FALSE
+
+# Control output of ParaParams: 0 - no output, 1 - output only non-default values, 2 - output non-default values with comments, 3 - output all values, 4 - output all values with comments [Default value: 4]
+OutputParaParams = 2
+

@@ -1,0 +1,10 @@
+[ Not default SCIP parameters for root Solver are as follows ]
+constraints/orbisack/forceconscopy = TRUE
+constraints/orbitope_full/forceconscopy = TRUE
+constraints/orbitope_pp/forceconscopy = TRUE
+constraints/symresack/forceconscopy = TRUE
+[ Not default SCIP parameters for NOT root Solvers are as follows ]
+constraints/orbisack/forceconscopy = TRUE
+constraints/orbitope_full/forceconscopy = TRUE
+constraints/orbitope_pp/forceconscopy = TRUE
+constraints/symresack/forceconscopy = TRUE
