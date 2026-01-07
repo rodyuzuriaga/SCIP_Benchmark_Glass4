@@ -8,7 +8,7 @@ En este estudio se evalúa la capacidad de resolución de problemas de Programac
 
 UG es un framework genérico diseñado para paralelizar solvers basados en *Branch-and-Bound* (por ejemplo, MIP, MINLP, ExactIP) tanto en entornos de memoria distribuida como compartida. Su arquitectura permite explotar el rendimiento de solvers de estado del arte base (como SCIP o Xpress) sin necesidad de reescribir o paralelizar el código interno del solver base.
 
-![Diseño de UG](https://ug.zib.de/images/ug_design.png)
+<img width="915" height="300" alt="image" src="https://github.com/user-attachments/assets/a321a7c1-1500-43a9-a8ed-ad675a80559a" />
 
 ## Concepto del Framework de Paralelización: Paradigma Supervisor-Trabajador
 
@@ -23,12 +23,12 @@ En esta arquitectura:
 **1. Paradigma Maestro-Trabajador (Master-Worker)**
 En este modelo clásico, la comunicación es simple ("Task" y "Result"). El Maestro gestiona todos los nodos abiertos del árbol de búsqueda. Aunque es adecuado para computación de alto rendimiento (High-Throughput), puede presentar cuellos de botella en HPC a gran escala debido a la enorme cantidad de nodos transferidos.
 
-![Esquema Master-Worker](https://ug.zib.de/doc/html/Master-Worker.png)
+<img width="1109" height="862" alt="image" src="https://github.com/user-attachments/assets/330036bd-28c1-4e82-850f-a2a4f1568f4c" />
 
 **2. Paradigma Supervisor-Trabajador (Implementado en UG)**
 UG define un protocolo de paso de mensajes flexible entre el inicio ("Task") y la finalización ("Completion") de una tarea. Mensajes como "Solution" (nueva solución incumbente), "InCollecting" (solicitud de nuevas tareas) o "Interrupt" permiten una coordinación más eficiente. El **LoadCoordinator** mantiene solo los nodos raíz de los sub-problemas activos, delegando la gestión profunda del árbol a los Workers, lo cual optimiza el uso de memoria y ancho de banda en la comunicación.
 
-![Esquema Supervisor-Worker](https://ug.zib.de/doc/html/Supervisor-Worker.png)
+<img width="1104" height="863" alt="image" src="https://github.com/user-attachments/assets/8ff0e152-f788-4ebb-86cc-f796a23823dc" />
 
 ## Definición del Problema: glass4
 
