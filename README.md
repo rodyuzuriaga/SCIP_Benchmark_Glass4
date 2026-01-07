@@ -147,4 +147,5 @@ El log final del **Load Coordinator** confirma el funcionamiento del sistema Sup
 *   **SCIP Optimization Suite:** [https://scipopt.org/](https://scipopt.org/)
 *   **UG (Ubiquity Generator) Home:** [https://ug.zib.de](https://ug.zib.de)
 *   **Conceptos de UG:** [https://ug.zib.de/doc/html/CONCEPT.php](https://ug.zib.de/doc/html/CONCEPT.php)
+*   **UG Quickstart:** [https://ug.zib.de/doc/html/QUICKSTART.php](https://ug.zib.de/doc/html/QUICKSTART.php)
 *   **MIPLIB 2017 (Instancia glass4):** [https://miplib.zib.de/instance_details_glass4.html](https://miplib.zib.de/instance_details_glass4.html)
