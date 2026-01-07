@@ -1,8 +1,8 @@
-# Benchmarking de Optimización Paralela con FiberSCIP (SCIP Optimization Suite)
+# Validación de Optimización Paralela con FiberSCIP
 
-Este repositorio documenta la configuración, ejecución y análisis de resultados de la validación técnica del framework **FiberSCIP**, una extensión para computación paralela de **SCIP Optimization Suite**.
+Este repositorio documenta la validación funcional del solver **FiberSCIP** en un entorno multi-núcleo.
 
-En este estudio se evalúa la capacidad de resolución de problemas de Programación Entera Mixta (MIP) complejos utilizando paralelismo en memoria compartida. Como caso de prueba se utiliza la instancia de benchmark estándar `glass4` de MIPLIB, con el objetivo de verificar la eficiencia en la distribución de carga computacional y la reducción del tiempo de resolución en entornos multi-núcleo.
+El objetivo principal es demostrar que la instalación actual soporta correctamente la ejecución paralela. A través de la resolución de la instancia `glass4`, se verifica que el sistema es capaz de instanciar múltiples solvers y distribuir la carga de trabajo (Branch-and-Bound) entre los procesadores lógicos disponibles, confirmando que el entorno está habilitado para computación concurrente.
 
 ## Sobre UG (Ubiquity Generator)
 
@@ -48,7 +48,7 @@ La validación se ejecutó en una estación de trabajo de alto rendimiento con l
 
 | Componente | Especificación |
 |------------|----------------|
-| **Procesador** | 6 Núcleos / 12 Hilos Lógicos (Base 2.38 GHz) |
+| **Procesador** | 6 Procesadores Lógicos (Base 2.38 GHz) |
 | **Arquitectura** | x64 con Virtualización Activada |
 | **Caché L1/L2/L3** | 384 kB / 3.0 MB / 8.0 MB |
 | **Solver** | SCIP Optimization Suite 10.0.0 (FiberSCIP) |
